@@ -26,7 +26,7 @@ setup(
     name='mate3',
     version='0.6.2',
     description='Outback Mate3s Python Library',
-    python_requires='==3.*,>=3.13.0',
+    python_requires='==3.*,>=3.10.0',
     project_urls={"homepage": "https://github.com/adamcharnock/mate3/", "repository": "https://github.com/adamcharnock/mate3/"},
     author='Adam Charnock',
     author_email='adam@adamcharnock.com',

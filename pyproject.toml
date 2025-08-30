@@ -12,7 +12,7 @@ homepage = "https://github.com/adamcharnock/mate3/"
 repository = "https://github.com/adamcharnock/mate3/"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.10"
 pymodbus = "^3.11.1"
 loguru = "^0.7.3"
 
