@@ -10,7 +10,7 @@ This Python library aims to provide complete support for all Outback devices con
 - (Hopefully) get access to the full Outback spec in a 'user friendly' form. You don't need to know about the magic numbers in Enums or Bitfields (or the SunSpec), or how to interpret fault codes, and nor do you have to worry about twos-complements and other such things.
 - Co-develop without giving access to your system. That is, you can 'dump' a snapshot of your system and others can then interact with it (within reason) as if it were a real Mate3 over Modbus - which is great for testing/debugging/etc.
 
-** This library was updated to python 3.13. It may work on other version but is not guaranteed.**
+** This library was updated to python 3.10. It may work on other version but is not guaranteed.**
   
 ## Installation
 
