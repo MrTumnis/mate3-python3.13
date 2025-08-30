@@ -4,11 +4,10 @@ import time
 from sys import argv
 from typing import List, NamedTuple
 
-from mate3.api import Mate3Client
+from mate3.api import Mate3Client, DEFAULT_PORT
 from mate3.devices import DeviceValues
 from mate3.field_values import FieldValue
 from mate3.sunspec.fields import IntegerField
-from pymodbus.constants import Defaults
 from pymodbus.exceptions import ConnectionException, ModbusIOException
 
 logger = logging.getLogger("mate3.mate3_pg")
@@ -136,7 +135,7 @@ def main():
     parser = argparse.ArgumentParser(description="Read all available data from the Mate3 controller")
 
     parser.add_argument("--host", "-H", dest="host", help="The host name or IP address of the Mate3", required=True)
-    parser.add_argument("--port", "-p", dest="port", default=Defaults.Port, help="The port number address of the Mate3")
+    parser.add_argument("--port", "-p", dest="port", default=DEFAULT_PORT, help="The port number address of the Mate3")
     parser.add_argument("--interval", "-i", dest="interval", default=5, help="Polling interval in seconds", type=int)
     parser.add_argument(
         "--database-url",

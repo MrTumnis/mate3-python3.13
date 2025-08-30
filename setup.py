@@ -26,7 +26,7 @@ setup(
     name='mate3',
     version='0.6.2',
     description='Outback Mate3s Python Library',
-    python_requires='==3.*,>=3.7.0',
+    python_requires='==3.*,>=3.13.0',
     project_urls={"homepage": "https://github.com/adamcharnock/mate3/", "repository": "https://github.com/adamcharnock/mate3/"},
     author='Adam Charnock',
     author_email='adam@adamcharnock.com',
@@ -36,6 +36,6 @@ setup(
     packages=[],
     package_dir={"": "."},
     package_data={},
-    install_requires=['fixedint==0.*,>=0.1.6', 'loguru==0.*,>=0.5.3', 'pymodbus==2.*,>=2.4.0'],
-    extras_require={"dev": ["black==18.*,>=18.3.0.a0", "dephell>=0.7.6", "pytest==6.*,>=6.2.1", "pytest-console-scripts==1.*,>=1.1.0", "pytest-dictsdiff==0.*,>=0.5.8", "pytest-subtests==0.*,>=0.4.0"]},
+    install_requires=['loguru==0.*,>=0.7.3', 'pymodbus==3.*,>=3.11.1'],
+    extras_require={"dev": ["black==25.*,>=25.1.0", "dephell==0.*,>=0.8.3", "flake8==7.*,>=7.3.0", "openpyxl==3.*,>=3.1.5", "pytest==8.*,>=8.4.1", "pytest-console-scripts==1.*,>=1.4.1", "pytest-dictsdiff==0.*,>=0.5.8", "pytest-subtests==0.*,>=0.14.2"]},
 )
