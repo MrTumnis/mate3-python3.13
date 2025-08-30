@@ -3,7 +3,7 @@ from datetime import datetime
 from typing import List
 
 from loguru import logger
-from pymodbus.constants import Defaults
+DEFAULT_PORT = 502
 
 from mate3.devices import DeviceValues
 from mate3.modbus_client import CachingModbusClient, ModbusTcpClient, NonCachingModbusClient
@@ -42,7 +42,7 @@ class Mate3Client:
     def __init__(
         self,
         host: str,
-        port: int = Defaults.Port,
+        port: int = DEFAULT_PORT,
         cache_path: str = None,
         cache_only: bool = False,
         cache_writeable: bool = False,

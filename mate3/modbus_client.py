@@ -3,7 +3,7 @@ from hashlib import md5
 from pathlib import Path
 
 from loguru import logger
-from pymodbus.client.sync import ModbusTcpClient
+from pymodbus.client import ModbusTcpClient
 
 
 class NonCachingModbusClient(ModbusTcpClient):

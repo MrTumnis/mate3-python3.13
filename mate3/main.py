@@ -8,9 +8,7 @@ from pathlib import Path
 from typing import List, Tuple
 
 from loguru import logger
-from pymodbus.constants import Defaults
-
-from mate3.api import Mate3Client
+from mate3.api import Mate3Client, DEFAULT_PORT
 from mate3.sunspec.fields import Mode
 
 
@@ -181,7 +179,7 @@ def main():
     logger.add(sys.stderr, level=args.loglevel)
 
     # Get the client:
-    port = Defaults.Port if args.port is None else args.port
+    port = DEFAULT_PORT if args.port is None else args.port
 
     # If dump, let's do it without a normal client:
     if args.cmd == "dump":
